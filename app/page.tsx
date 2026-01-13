@@ -1,26 +1,21 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import AboutMe from "@/components/AboutMe";
-import TourPackages from "@/components/TourPackages";
-import WhyChooseMe from "@/components/WhyChooseMe";
+import TourDestinations from "@/components/TourDestinations";
+import VehicleFeatures from "@/components/VehicleFeatures";
+import ScenicGallery from "@/components/ScenicGallery";
 import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
-import MobileFooter from "@/components/MobileFooter";
+import BookCTA from "@/components/BookCTA";
+import FloatingButtons from "@/components/FloatingButtons";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navbar />
       <Hero />
-      <AboutMe />
-      <TourPackages />
-      <WhyChooseMe />
+      <TourDestinations />
+      <VehicleFeatures />
+      <ScenicGallery />
       <Testimonials />
-      <Contact />
-      <MobileFooter />
-
-      {/* Spacing for mobile footer */}
-      <div className="h-24 lg:hidden" />
+      <BookCTA />
+      <FloatingButtons />
     </main>
   );
 }

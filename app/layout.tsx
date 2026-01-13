@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Personal Travel Driver & Local Guide | Explore with a Local Expert",
+  title: "Personal Tour Driver | Your Trusted Travel Companion in Vietnam",
   description:
-    "Safe, comfortable, and flexible private tours with a professional tech driver. Explore the city with a local expert.",
+    "Safe, comfortable, and unforgettable journeys across Vietnam. Professional tour driver with premium vehicle, free WiFi, and expert local knowledge.",
 };
 
 export default function RootLayout({

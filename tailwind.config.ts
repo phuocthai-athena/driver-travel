@@ -9,36 +9,39 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Deep Ocean Blue (trust)
-        ocean: {
-          50: "#e6f2ff",
-          100: "#b3d9ff",
-          200: "#80bfff",
-          300: "#4da6ff",
-          400: "#1a8cff",
-          500: "#0066cc", // Primary Deep Ocean Blue
-          600: "#0052a3",
-          700: "#003d7a",
-          800: "#002952",
-          900: "#001429",
+        // Sky Blue (inviting travel color)
+        sky: {
+          50: "#f0f9ff",
+          100: "#e0f2fe",
+          200: "#bae6fd",
+          300: "#7dd3fc",
+          400: "#38bdf8",
+          500: "#0ea5e9", // Primary Sky Blue
+          600: "#0284c7",
+          700: "#0369a1",
+          800: "#075985",
+          900: "#0c4a6e",
         },
-        // Golden Yellow (highlights)
-        gold: {
-          50: "#fffef0",
-          100: "#fff9c4",
-          200: "#fff59d",
-          300: "#fff176",
-          400: "#ffeb3b",
-          500: "#ffd700", // Primary Golden Yellow
-          600: "#ffc400",
-          700: "#ffb300",
-          800: "#ffa000",
-          900: "#ff8f00",
+        // Sandy Beige (warm, trustworthy)
+        sandy: {
+          50: "#fefaf8",
+          100: "#fdf4f0",
+          200: "#fae8e0",
+          300: "#f6d5c7",
+          400: "#f0b8a3",
+          500: "#e89f7a", // Primary Sandy Beige
+          600: "#d9825a",
+          700: "#c16647",
+          800: "#9f5239",
+          900: "#7f4330",
         },
       },
       fontFamily: {
-        heading: ["Poppins", "sans-serif"],
-        body: ["Open Sans", "sans-serif"],
+        heading: ["Varela Round", "sans-serif"],
+        body: ["Nunito Sans", "sans-serif"],
+      },
+      backdropBlur: {
+        xs: "2px",
       },
     },
   },

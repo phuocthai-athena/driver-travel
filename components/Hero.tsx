@@ -5,66 +5,53 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-sky-400 via-sky-300 to-sandy-200">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}
         />
-        <div className="absolute inset-0 bg-ocean-900/70" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-            <MapPin className="w-4 h-4 text-gold-400" />
-            <span className="text-sm font-medium">Local Expert Driver</span>
+          <div className="inline-flex items-center gap-2 px-6 py-3 mb-8 bg-white/80 backdrop-blur-md rounded-full border border-white/50 shadow-lg">
+            <MapPin className="w-5 h-5 text-sky-600" />
+            <span className="font-semibold text-gray-800">
+              Professional Tour Driver
+            </span>
           </div>
 
           {/* Headline */}
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance leading-tight">
-            Explore <span className="text-gold-400">Da Nang</span> with a Local
-            Expert
+          <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-balance leading-tight text-gray-900">
+            Your Trusted
+            <br />
+            <span className="text-sky-600">Travel Companion</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl sm:text-2xl md:text-3xl mb-10 text-white/90 max-w-3xl mx-auto text-balance">
-            Safe, comfortable, and flexible private tours with a professional
-            tech driver
+          <p className="text-xl sm:text-2xl md:text-3xl mb-10 text-gray-800 max-w-3xl mx-auto text-balance font-medium">
+            Safe, comfortable, and unforgettable journeys across Vietnam
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link
-              href="#contact"
-              className="group inline-flex items-center gap-2 px-8 py-4 bg-gold-500 hover:bg-gold-600 text-ocean-900 font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 cursor-pointer"
-            >
-              Book Now
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
-              href="#tours"
-              className="group inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold rounded-lg border border-white/30 transition-all duration-200 cursor-pointer"
-            >
-              View Tours
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
+          {/* CTA Button */}
+          <Link
+            href="#book"
+            className="group inline-flex items-center gap-3 px-10 py-5 bg-sky-600 hover:bg-sky-700 text-white font-bold text-lg rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 cursor-pointer"
+          >
+            Book Your Ride
+            <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
+          </Link>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-3 bg-white/70 rounded-full" />
-        </div>
-      </div>
+      {/* Decorative Elements */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 }
